@@ -1,0 +1,166 @@
+
+  #hamburger-input{
+    display: none;
+  }
+  #hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(
+      to bottom, 
+      black, black 20%, 
+      blanchedalmond 20%, blanchedalmond 40%, 
+      black 40%, black 60%, 
+      blanchedalmond 60%, blanchedalmond 80%, 
+      black 80%, black 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color:#7c582e;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: rgb(49, 38, 16);
+  font-size: 1rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 2rem;
+}
+
+#hamburger-menu a {
+  color:  rgb(49, 38, 16) ;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  color: black;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+@media screen and (max-width: 1980px) {
+    #main-menu {
+      display: none;
+    }
+    #hamburger-menu {
+      display: inline;
+    }
+  }
+html {
+    background-color: blanchedalmond;
+}
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+.prvidio{
+    text-align:center;
+}
+.main{
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 100vw;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+img {
+    width: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.forma1{
+    text-align: center;
+    
+}
+
+input[type=string], input[type=email], input[type=submit], input[type=reset], textarea {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border:0;
+    box-shadow: 3px 3px 8px;  
+}
+button {
+    background-color: rgb(192, 170, 138); 
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border:0;
+    box-shadow: 3px 3px 8px;     
+}
+button :hover{
+   color: rgb(138, 123, 101);
+}
+a {
+    text-decoration: none; 
+    color:black;
+    font-weight:200;
+}
+textarea{
+    resize: vertical;
+    overflow: scroll;
+}
+
+input[type=submit] {
+    appearance:none;
+    width:43%;
+    background-color: rgb(192, 170, 138);
+}
+.icon {
+justify-content: center;
+padding: 10px;
+margin:auto;
+width:auto;
+
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
